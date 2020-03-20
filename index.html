@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gablota.pl</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-wrap">
+            <div class="header__nav">
+                <a href="index.html" class="header__title link-reset ">Gablota.pl</a>
+                <img class="header__burger" src="assets/icon/bars-solid.svg" alt="Burger icon">
+                <div class="header__nav-menu">
+                    <ul class="list-reset header__nav-list">
+                        <li><a class="header__nav-link link-reset" href="addoffer.html">Dodaj ogłosznie</a></li>
+                        <li><a class="header__nav-link link-reset" href="profile.html">Moje konto</a></li>
+                        <li><a class="header__nav-link link-reset" href="singin.html">Zaloguj/Wyloguj</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__mobile">
+                <ul class="list-reset header__mobile-list">
+                    <li><a class="header__mobile-link link-reset" href="addoffer.html">Dodaj ogłosznie</a></li>
+                    <li><a class="header__mobile-link link-reset" href="profile.html">Moje konto</a></li>
+                    <li><a class="header__mobile-link link-reset" href="singin.html">Zaloguj/Wyloguj</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="search">
+            <form class="search-wrap">
+                <div class="search__checkbox">
+                    <input type="radio" name="vechicle" class="search__checkbox-item car">
+                    <input type="radio" name="vechicle" class="search__checkbox-item bike">
+                    <input type="radio" name="vechicle" class="search__checkbox-item truck">
+                </div>
+                <div class="search__form">
+                    <label>Podastawowe</label>
+                    <div class="input">
+                        <select class="input-item" name="make" id="make">
+                            <option value="">Marka</option>
+                            <option value="Trabant">Trabant</option>
+                            <option value="Daewoo">Daewoo</option>
+                            <option value="Fiat">Fiat</option>
+                            <option value="Opel">Opel</option>
+                            <option value="Żuk">Żuk</option>
+                            <option value="Łada">Łada</option>
+                        </select>
+                    </div>
+                    <input class="input" type="text" placeholder="Model">
+                    <label id="prod">Rok produkcji</label>
+                    <input class="input" name="prod" type="number" placeholder="Od">
+                    <input class="input" name="prod" type="number" placeholder="Do">
+                    <label id="year">Przebieg</label>
+                    <input class="input" name="year" type="number" placeholder="Od">
+                    <input class="input" name="year" type="number" placeholder="Do">
+                    <label id="price">Cena</label>
+                    <input class="input" name="price" type="number" placeholder="Od">
+                    <input class="input" name="price" type="number" placeholder="Do">
+                </div>
+                <div class="search__atomic">
+                    <label>Szczegółowe</label>
+                    <input class="input" type="text" placeholder="Lokalizacja">
+                    <div class="input">
+                        <select class="input-item" name="power" id="power">
+                            <option value="">Moc</option>
+                            <option value="">0 - 49</option>
+                            <option value="">50 - 100</option>
+                            <option value="">100 - 200</option>
+                            <option value="">200 - 300</option>
+                            <option value="">300 - 400</option>
+                            <option value="">400 +</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <select class="input-item" name="type" id="type">
+                            <option value="">Nadwozie</option>
+                            <option value="">Kombi</option>
+                            <option value="">Coupe</option>
+                            <option value="">Sedan</option>
+                            <option value="">SUV</option>
+                            <option value="">Kabiolet</option>
+                            <option value="">Miejski</option>
+                        </select>
+                    </div>
+                    <input class="input" name="price" type="number" placeholder="Pojemność w ccm">
+                    <div class="input">
+                        <select class="input-item" name="state" id="state">
+                            <option value="">Stan</option>
+                            <option value="">Nowy</option>
+                            <option value="">Używany</option>
+                            <option value="">Uszkodzony</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <select class="input-item" name="gearbox" id="gearbox">
+                            <option value="Manual">Skrzynia</option>
+                            <option value="Manual">Manual</option>
+                            <option value="Automat">Automat</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <select class="input-item" name="drive" id="drive">
+                            <option value="AWD">Napęd</option>
+                            <option value="AWD">AWD</option>
+                            <option value="RWD">RWD</option>
+                            <option value="FWD">FWD</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <select class="input-item" name="fuel" id="fuel">
+                            <option value="Benzyna">Paliwo</option>
+                            <option value="Benzyna">Benzyna</option>
+                            <option value="Diesel">Diesel</option>
+                            <option value="Benzyna + LPG">Benzyna + LPG</option>
+                            <option value="Elektryczny">Elektryczny</option>
+                        </select>
+                    </div>
+                    <input class="input" type="text" placeholder="Kraj pochodzenia">
+                    <input class="input" type="number" name="books" min="0" max="9" step="1" id="books"
+                        placeholder="Ilosc miejsc">
+                </div>
+                <div class="search__confirm">
+                    <img src="assets/icon/arrow-circle-down-solid.svg" alt="Down arrow">
+                    <button class="button-confirm" type="submit">Szukaj</button>
+                </div>
+            </form>
+        </section>
+        <section class="offer">
+            <article class="offer__item">
+                <img src="assets/img/1/1.jpg" alt="">
+                <div>
+                    <a href="offer.html" class="link-reset">
+                        <h2 class="offer__item-title">Golf 8 1.5 TSI </h2>
+                    </a>
+                    <p class="offer__item-year">Rok: 2019</p>
+                    <p class="offer__item-odo">Przebieg 1000km</p>
+                    <h3 class="offer__item-location">Białystok</h3>
+                    <p class="offer__item-price">Cena: 120000zł</p>
+                </div>
+            </article>
+            <article class="offer__item">
+                <img src="assets/img/2/1.jpg" alt="">
+                <div>
+                    <a href="offer3.html" class="link-reset">
+                        <h2 class="offer__item-title">A45S AMG 421km </h2>
+                    </a>
+                    <p class="offer__item-year">Rok: 2020</p>
+                    <p class="offer__item-odo">Przebieg 5km</p>
+                    <h3 class="offer__item-location">Warszawa</h3>
+                    <p class="offer__item-price">Cena: 234000zł</p>
+                </div>
+            </article>
+            <article class="offer__item">
+                <img src="assets/img/3/1.jpg" alt="">
+                <div>
+                    <a href="offer2.html" class="link-reset">
+                        <h2 class="offer__item-title">Audi Rs6 4.0 </h2>
+                    </a>
+                    <p class="offer__item-year">Rok: 2018</p>
+                    <p class="offer__item-odo">Przebieg 5466 km</p>
+                    <h3 class="offer__item-location">Warszawa</h3>
+                    <p class="offer__item-price">Cena: 5600000zł</p>
+                </div>
+            </article>
+            <article class="offer__item">
+                <img src="assets/img/3/1.jpg" alt="">
+                <div>
+                    <a href="offer.html" class="link-reset">
+                        <h2 class="offer__item-title">Fiat Punto 1.2 75km </h2>
+                    </a>
+                    <p class="offer__item-year">Rok: 1999</p>
+                    <p class="offer__item-odo">Przebieg do ustalenia</p>
+                    <h3 class="offer__item-location">Białystok</h3>
+                    <p class="offer__item-price">Cena: 1200zł</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer-wrap">
+        <div class="footer">
+            <div class="footer__social">
+                <a href="index.html" class="footer__title link-reset">Gablota.pl</a>
+                <div class="footer__icons">
+                    <a href="https://www.facebook.com/" target="_blank" class="link-reset footer__icons-icon"><img
+                            src="assets/icon/facebook-square-brands.svg" alt="Facebook link icon"></a>
+                    <a href="https://twitter.com/" target="_blank" class="link-reset footer__icons-icon"><img
+                            src="assets/icon/twitter-square-brands.svg" alt="Twitter link icon"></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="link-reset footer__icons-icon"><img
+                            src="assets/icon/youtube-square-brands.svg" alt="Youtube link icon"></a>
+                </div>
+            </div>
+            <div class="footer__nav">
+                <ul class="list-reset footer__nav-ul">
+                    <li><a class="footer__nav-link link-reset" href="addoffer.html">Dodaj ogłosznie</a></li>
+                    <li><a class="footer__nav-link link-reset" href="profile.html">Moje konto</a></li>
+                    <li><a class="footer__nav-link link-reset" href="profile.html">Moje ogłosznia</a></li>
+                    <li><a class="footer__nav-link link-reset" href="singin.html">Zaloguj/Wyloguj</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/mobieatomic.js"></script>
+    <script src="js/mobilemenu.js"></script>
+</body>
+
+</html>

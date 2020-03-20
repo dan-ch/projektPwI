@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gablota.pl - profil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header-wrap">
+      <div class="header__nav">
+        <a href="index.html" class="header__title link-reset ">Gablota.pl</a>
+        <img class="header__burger" src="assets/icon/bars-solid.svg" alt="Burger icon">
+        <div class="header__nav-menu">
+          <ul class="list-reset header__nav-list">
+            <li><a class="header__nav-link link-reset" href="addoffer.html">Dodaj ogłosznie</a></li>
+            <li><a class="header__nav-link link-reset" href="profile.html">Moje konto</a></li>
+            <li><a class="header__nav-link link-reset" href="singin.html">Zaloguj/Wyloguj</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__mobile">
+        <ul class="list-reset header__mobile-list">
+          <li><a class="header__mobile-link link-reset" href="addoffer.html">Dodaj ogłosznie</a></li>
+          <li><a class="header__mobile-link link-reset" href="profile.html">Moje konto</a></li>
+          <li><a class="header__mobile-link link-reset" href="singin.html">Zaloguj/Wyloguj</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="addoffer">
+      <h2 class="addoffer__title">Dodawanie ogłosznia</h2>
+      <img src="assets/img/1/1.jpg" alt="" class="addoffer__bigofferimg">
+      <div class="addoffer__images">
+        <img src="assets/img/1/2.jpg" alt="" class="addoffer__images-item">
+        <img src="assets/img/1/3.jpg" alt="" class="addoffer__images-item">
+        <img src="assets/img/1/4.jpg" alt="" class="addoffer__images-item">
+        <img src="assets/img/1/5.jpg" alt="" class="addoffer__images-item">
+        <img src="assets/img/1/6.jpg" alt="" class="addoffer__images-item">
+        <img src="assets/img/1/7.jpg" alt="" class="addoffer__images-item">
+      </div>
+      <form action="" class="addoffer__form">
+        <div class="input">
+          <select class="input-item" name="make" id="make">
+            <option value="">Marka</option>
+            <option value="Trabant">Trabant</option>
+            <option value="Daewoo">Daewoo</option>
+            <option value="Fiat">Fiat</option>
+            <option value="Opel">Opel</option>
+            <option value="Żuk">Żuk</option>
+            <option value="Łada">Łada</option>
+          </select>
+        </div>
+        <input class="input" type="text" placeholder="Model">
+        <input class="input" name="prod" type="number" placeholder="Rok produkcji">
+        <input class="input" name="prod" type="number" placeholder="Przebieg w tys.">
+        <div class="input">
+          <select class="input-item" name="type" id="type">
+            <option value="">Nadwozie</option>
+            <option value="">Kombi</option>
+            <option value="">Coupe</option>
+            <option value="">Sedan</option>
+            <option value="">SUV</option>
+            <option value="">Kabiolet</option>
+            <option value="">Miejski</option>
+          </select>
+        </div>
+        <input class="input" name="price" type="number" placeholder="Pojemność w ccm">
+        <div class="input">
+          <select class="input-item" name="state" id="state">
+            <option value="">Stan</option>
+            <option value="">Nowy</option>
+            <option value="">Używany</option>
+            <option value="">Uszkodzony</option>
+          </select>
+        </div>
+        <div class="input">
+          <select class="input-item" name="gearbox" id="gearbox">
+            <option value="Manual">Manual</option>
+            <option value="Automat">Automat</option>
+          </select>
+        </div>
+        <input class="input" type="number" placeholder="Moc">
+        <div class="input">
+          <select class="input-item" name="drive" id="drive">
+            <option value="AWD">AWD</option>
+            <option value="RWD">RWD</option>
+            <option value="FWD">FWD</option>
+          </select>
+        </div>
+        <div class="input">
+          <select class="input-item" name="fuel" id="fuel">
+            <option value="Benzyna">Benzyna</option>
+            <option value="Diesel">Diesel</option>
+            <option value="Benzyna + LPG">Benzyna + LPG</option>
+            <option value="Elektryczny">Elektryczny</option>
+          </select>
+        </div>
+        <input class="input" type="text" placeholder="Kraj pochodzenia">
+        <input class="input" type="text" placeholder="Lokalizacja">
+        <input class="input" type="number" name="books" min="0" max="9" step="1" id="books" placeholder="Ilość miejsc">
+        <input class="input addoffer__form-price" type="number" placeholder="Cena">
+        <textarea class="input" name="" id="" cols="30"
+          rows="10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ipsam odit iste voluptates soluta consequatur maxime quo tempora, obcaecati omnis nam molestiae enim commodi repellendus! Aperiam praesentium accusantium cumque natus.</textarea>
+        <button type="submit" class="input">Dodaj ogłosznie</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer-wrap">
+    <div class="footer">
+      <div class="footer__social">
+        <a href="index.html" class="footer__title link-reset">Gablota.pl</a>
+        <div class="footer__icons">
+          <a href="https://www.facebook.com/" target="_blank" class="link-reset footer__icons-icon"><img
+              src="assets/icon/facebook-square-brands.svg" alt="Facebook link icon"></a>
+          <a href="https://twitter.com/" target="_blank" class="link-reset footer__icons-icon"><img
+              src="assets/icon/twitter-square-brands.svg" alt="Twitter link icon"></a>
+          <a href="https://www.youtube.com/" target="_blank" class="link-reset footer__icons-icon"><img
+              src="assets/icon/youtube-square-brands.svg" alt="Youtube link icon"></a>
+        </div>
+      </div>
+      <div class="footer__nav">
+        <ul class="list-reset footer__nav-ul">
+          <li><a class="footer__nav-link link-reset" href="addoffer.html">Dodaj ogłosznie</a></li>
+          <li><a class="footer__nav-link link-reset" href="profile.html">Moje konto</a></li>
+          <li><a class="footer__nav-link link-reset" href="profile.html">Moje ogłosznia</a></li>
+          <li><a class="footer__nav-link link-reset" href="singin.html">Zaloguj/Wyloguj</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="js/mobilemenu.js"></script>
+</body>
+
+</html>
